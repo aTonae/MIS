@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_exp_type"
+        android:textSize="22dp"
+        android:textColor="#444"
+        tools:text="Mobile Phone Expense"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_date"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/tv_exp_type"
+        android:text="@string/date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/tv_amount"
+        tools:text="300.00"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_action"
+        android:layout_below="@+id/tv_exp_type"
+        tools:text="action"
+        android:paddingRight="16dp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/img_drop"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dropdown"
+        android:layout_below="@+id/tv_exp_type"
+        android:id="@+id/img_drop"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

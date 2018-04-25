@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:rowCount="7"
+    android:columnCount="3"
+    >
+    <TextView
+        android:text="Rate Type"
+        android:padding="16dp"
+        />
+    <TextView android:text="Select Rate"
+        android:padding="16dp"
+        android:background="#eee"
+        android:id="@+id/tvRateType"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="fill"/>
+    <Button android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/btRateType"
+        />
+    <TextView
+        android:text="Product Type"
+        android:padding="16dp"
+        />
+    <TextView android:text="Select Product"
+        android:padding="16dp"
+        android:background="#eee"
+        android:layout_marginBottom="2dp"
+
+        android:layout_gravity="fill"
+        android:id="@+id/tvProductType"/>
+    <Button android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/btProductType"/>
+    <TextView
+        android:text="Vendor"
+        android:padding="16dp"
+        />
+    <TextView android:text="Select Vendor"
+        android:padding="16dp"
+        android:background="#eee"
+        android:layout_marginBottom="2dp"
+
+        android:layout_gravity="fill"
+        android:id="@+id/tvVendor"/>
+    <Button android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/btVendor"/>
+    <TextView
+        android:text="Type"
+        android:padding="16dp"
+        />
+    <TextView android:text="Select Type"
+        android:padding="16dp"
+        android:background="#eee"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/tvType"
+        android:layout_gravity="fill"/>
+    <Button android:background="@android:drawable/btn_dropdown"
+        android:id="@+id/btType"
+        />
+    <TextView
+        android:text="Effect Date"
+        android:padding="16dp"
+        />
+    <TextView android:text="Select Date"
+        android:padding="16dp"
+        android:background="#eee"
+        android:layout_columnSpan="2"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/tvSelect"
+        android:layout_gravity="fill"/>
+
+    <TextView
+        android:text="Rate"
+        android:padding="16dp"
+        />
+    <EditText android:hint="0.00"
+        android:padding="16dp"
+        android:layout_gravity="fill"
+        android:background="#eee"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/etRate"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:text="Srv. Tax%"
+        android:padding="16dp"
+        />
+    <EditText android:hint="0.00"
+        android:padding="16dp"
+        android:layout_columnSpan="2"
+        android:background="#eee"
+        android:id="@+id/etSrcTax"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="fill"/>
+
+    <TextView
+        android:text="Total"
+        android:padding="16dp"
+        />
+    <EditText android:hint="0.00"
+        android:padding="16dp"
+        android:layout_columnSpan="2"
+        android:background="#eee"
+        android:id="@+id/etTotal"
+        android:layout_gravity="fill"/>
+
+</GridLayout>
+    <include layout="@layout/footer_button" android:id="@+id/footer"/>
+</LinearLayout>

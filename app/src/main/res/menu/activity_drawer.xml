@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_attendance"
+            android:title="Attendance Info" />
+        <item
+            android:id="@+id/nav_leave"
+            android:title="Leave Info" />
+        <item
+            android:id="@+id/nav_rfa_approved"
+            android:title="RFA Approved" />
+
+        <item
+            android:id="@+id/nav_rollout"
+            android:title="Add Rollout" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

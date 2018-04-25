@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_ch"
+    android:textColor="#000"
+    android:paddingBottom="8dp"
+    android:text="@string/ch_leave"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_ch">
+        <TableRow>
+            <TextView android:text="S.No."
+                android:textColor="#444"
+                android:layout_weight="1"/>
+            <TextView android:text="Month/Year"
+                android:textColor="#444"
+                android:layout_weight="1"/>
+            <TextView android:text="CH"
+                android:textColor="#444"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:paddingTop="8dp"
+        android:id="@+id/tv_pl"
+        android:paddingBottom="8dp"
+        android:text="@string/paid_leave"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_pl">
+        <TableRow>
+            <TextView android:text="S.No."
+                android:textColor="#444"
+                android:layout_weight="1"/>
+            <TextView android:text="Month/Year"
+                android:textColor="#444"
+                android:layout_weight="1"/>
+            <TextView android:text="PL"
+                android:textColor="#444"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <include layout="@layout/footer_button"
+        android:id="@+id/footer"/>
+</LinearLayout>
+    </ScrollView>

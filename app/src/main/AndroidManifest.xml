@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mis.oblabs.com.mis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DrawerActivity"
+            android:label="@string/app_name">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.LeaveApply"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.DrawerActivity" />
+        <activity
+            android:name=".activity.RolloutCreate"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.DrawerActivity" />
+        <activity
+            android:name=".activity.CHRequest"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.DrawerActivity" />
+        <activity
+            android:name=".activity.ViewAttendance"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.DrawerActivity" />
+        <activity android:name=".activity.BaseListView" />
+        <activity android:name=".activity.ViewLeave" />
+        <activity android:name=".activity.ViewCH" />
+        <activity android:name=".activity.RfaAgainstSalary"></activity>
+    </application>
+
+</manifest>
